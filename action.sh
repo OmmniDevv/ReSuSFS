@@ -1,0 +1,17 @@
+#!/bin/sh
+
+PATH=/data/adb/ksu/bin:$PATH
+MODDIR="/data/adb/modules/ReSuSFS"
+PERSISTENT_DIR="/data/adb/ReSuSFS"
+
+. "$MODDIR/utils.sh"
+
+banner
+
+download_susfs_guard_lkm
+update_susfs || exit 1
+
+export NO_BANNER=1
+sh $MODDIR/ReSuSFS.sh --status
+
+# EOF

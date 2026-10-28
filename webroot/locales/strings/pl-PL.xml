@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="system_default">Domyślne systemowe</string>
+    <string name="reboot_dialog_title">Uruchom ponownie urządzenie</string>
+    <string name="reboot_dialog_message">Twoje urządzenie zostanie teraz zrestartowane. Upewnij się, że najpierw zapisałeś coś ważnego.</string>
+    <string name="status_active">Aktywne - ukrywanie jest wymuszane przez jądro</string>
+    <string name="status_unsupported_version">Nieobsługiwana wersja ksu_susfs</string>
+    <string name="status_binary_missing">nie znaleziono binarnego ksu_susfs</string>
+    <string name="status_unknown">Nieznane</string>
+    <string name="status_feature_count">Funkcje %s włączone</string>
+    <!-- Summary -->
+    <string name="summary_title">Podsumowanie konfiguracji</string>
+    <string name="summary_hint">Dotknij kafelka, aby przejść do strony SuSFS i edytować ją.</string>
+    <string name="summary_enabled_scripts">Włączone skrypty</string>
+    <!-- Features dialog -->
+    <string name="features_title">Aktywne funkcje</string>
+    <string name="features_none">Nie zgłoszono żadnych cech.</string>
+    <!-- Global -->
+    <string name="global_dev_opt">Opcja dewelopera włączona</string>
+    <string name="global_dev_opt_true">Opcja programisty jest już włączona</string>
+    <string name="global_reboot_now">Uruchom ponownie aby zacząć działać</string>
+    <string name="global_rebooting">Ponowne uruchamianie...</string>
+    <string name="global_saved">Plik zapisany do %s</string>
+    <string name="global_save_fail">Nie udało się zapisać pliku</string>
+    <string name="global_file_too_large">Edycja pliku nie jest obsługiwana w dużym pliku</string>
+    <string name="global_file_name_empty">Nazwa pliku nie może być pusta</string>
+    <string name="global_close">Zamknij</string>
+    <string name="global_cancel">Anuluj</string>
+    <string name="global_confirm">Potwierdź</string>
+    <string name="global_action">Akcja</string>
+    <string name="global_unsupported">Nieobsługiwane</string>
+    <!-- Control Panel -->
+    <string name="control_panel_title">Panel sterowania</string>
+    <string name="control_panel_bad_translation">Złe tłumaczenie</string>
+    <string name="control_panel_add_language">Dodaj język</string>
+    <!-- SuSFS config boxes -->
+    <string name="susfs_sus_paths_title">Ścieżki Sus</string>
+    <string name="susfs_sus_paths_desc">Ukrywa ścieżki tylko do odczytu/statyczne, poprzez add_sus_path. Skuteczne tylko dla procesów, w których uid ≥ 10000.</string>
+    <string name="susfs_sus_paths_loop_title">Ścieżki Sus (pętla)</string>
+    <string name="susfs_sus_paths_loop_desc">Ukrywa często modyfikowane/zretworzone ścieżki za pomocą add_sus_path_loop, ponownie oznaczane na każdym spawnie zygotu.</string>
+    <string name="susfs_sus_maps_desc">Ukrywa pliki biblioteki w mmapped z /proc/self/maps i powiązanych interfejsów za pomocą add_sus_map.</string>
+    <string name="susfs_kstat_paths_desc">Informacje o statystyce plików Spoofs dla ścieżek, które są przymocowane, rozłożone wcześnie i z opóźnieniem.</string>
+    <string name="susfs_open_redirect_title">Otwórz przekierowanie</string>
+    <string name="susfs_open_redirect_desc">Przekieruje otwartą ścieżkę docelową na ścieżkę zdefiniowaną przez użytkownika dla wybranego schematu uid</string>
+    <string name="susfs_uname_desc">Zajmuje wydanie i wersję jądra zgłoszone do wszystkich procesów.</string>
+    <string name="susfs_cmdline_desc">Wyświetla zawartość /proc/cmdline lub /proc/bootconfig z przygotowanego pliku.</string>
+    <!-- Config box actions -->
+    <string name="box_edit">Edytuj</string>
+    <string name="box_apply">Zastosuj</string>
+    <string name="box_custom_file">Załaduj niestandardowy plik</string>
+    <string name="box_entry_count">%d wpisów</string>
+    <string name="toggles_description">Proste flagi jądra stosowane przez hide_sus_mnts_for_non_su_procs, enable_log i enable_avc_log_spoofing.</string>
+    <string name="toggle_hide_mnts">Ukryj wierzchowce</string>
+    <string name="toggle_hide_mnts_desc">Zastosowane w wersjach po-fs-data lub starcie, gdy montaż zakończy się dla procesów użytkownika.</string>
+    <string name="toggle_enable_log">Włącz dziennik SuSFS</string>
+    <string name="toggle_enable_log_desc">Włącza rejestrowanie jądrów susfs.</string>
+    <string name="toggle_avc_spoof">Kontekst AVC 'su'</string>
+    <string name="toggle_avc_spoof_desc">Ukrywa domenę su z wyliczenia dziennika AVC.</string>
+    <string name="toggles_apply">Zastosuj</string>
+    <!-- UserHub -->
+    <string name="userhub_empty">Brak skryptów. Dotknij + aby utworzyć lub zaimportuj plik .sh.</string>
+    <string name="userhub_stage_postfs">dane po fs</string>
+    <string name="userhub_stage_bootcompleted">uruchamianie zakończone</string>
+    <string name="userhub_cron_label">Harmonogram</string>
+    <string name="userhub_cron_off">Brak harmonogramu</string>
+    <string name="userhub_cron_every_minutes">Co X minut</string>
+    <string name="userhub_cron_every_hours">Co X godziny</string>
+    <string name="userhub_cron_daily">Codziennie o</string>
+    <string name="userhub_cron_minutes_placeholder">np. 15</string>
+    <string name="userhub_cron_hours_placeholder">np. 6</string>
+    <string name="userhub_run">Uruchom</string>
+    <string name="userhub_delete">Usuń</string>
+    <string name="userhub_new_script">Nowy skrypt</string>
+    <string name="userhub_script_name">Nazwa skryptu</string>
+    <string name="userhub_confirm_delete">Usunąć %s? Tej operacji nie można cofnąć.</string>
+    <string name="userhub_imported">%s zaimportowane</string>
+    <string name="userhub_by_author">przez %s</string>
+    <string name="userhub_sort_title">Sortuj skrypty</string>
+    <string name="userhub_sort_name_asc">Nazwa (od A do Z)</string>
+    <string name="userhub_sort_name_desc">Nazwa (Z do A)</string>
+    <string name="userhub_sort_enabled_first">Najpierw włączone</string>
+    <string name="userhub_sort_modified_desc">Ostatnio zmodyfikowane</string>
+    <string name="userhub_sort_modified_asc">Najstarsza modyfikacja</string>
+    <string name="userhub_search_placeholder">Szukaj skryptów…</string>
+    <string name="userhub_search_empty">Żadne skrypty nie pasują do Twojego wyszukiwania</string>
+    <string name="userhub_edit_tags">Edytuj tagi</string>
+    <!-- More -->
+    <string name="more_documents">Dokumenty</string>
+    <string name="more_usage">Użycie</string>
+    <string name="more_faq">Często zadawane pytania</string>
+    <string name="more_support">Wsparcie</string>
+    <string name="more_support_telegram">Grupa wsparcia Telegram</string>
+    <string name="backup_restore_telegram_hint">Szukasz współdzielonych konfiguracji? Dołącz do grupy Telegram</string>
+    <string name="more_support_issue">Zgłoś problem</string>
+    <string name="more_support_view_webui_log">Zobacz dziennik WebUI</string>
+    <string name="donate_link_label">Wesprzyj rozwój ReSuSFS prostym darowizną</string>
+    <string name="donate_home_hint">Podoba Ci się ReSuSFS? Wesprzyj rozwój poniżej ❤️</string>
+    <!-- Credits -->
+    <string name="credits_title">Kredyty</string>
+    <string name="credits_susfs">SuSFS przez simonpunk</string>
+    <string name="credits_bindhosts">WebUI zbudowane na hostach bindhostów</string>
+    <string name="about_open">O ReSuSFS</string>
+    <string name="about_author">Autor</string>
+    <string name="about_license">Licencja</string>
+    <string name="about_repo">Repozytorium</string>
+    <!-- Footer -->
+    <string name="footer_home">Strona główna</string>
+    <string name="footer_susfs">O ReSuSFS</string>
+    <string name="footer_userhub">Użytkownik Hub</string>
+    <string name="footer_more">Więcej</string>
+    <!-- Backup and Restore -->
+    <string name="backup_restore_backup_and_restore">Kopia zapasowa &amp; Przywracanie konfiguracji</string>
+    <string name="backup_restore_export">Eksportuj</string>
+    <string name="backup_restore_restore">Przywróć</string>
+    <string name="backup_restore_exported">Konfiguracja zapisana do %s</string>
+    <string name="backup_restore_export_fail">Nie udało się wyeksportować konfiguracji</string>
+    <string name="backup_restore_nothing_to_export">Nie ma jeszcze nic do eksportu</string>
+    <string name="backup_restore_restored">Konfiguracja przywrócona pomyślnie</string>
+    <string name="backup_restore_restore_fail">Nie udało się przywrócić konfiguracji</string>
+</resources>
