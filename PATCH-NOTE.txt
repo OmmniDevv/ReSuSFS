@@ -1,0 +1,10 @@
+ReSuSFS v26.10.23 - patched for custom kernel (OmmniDevv)
+Original: ahmed-alnassif/ReSuSFS v26.10.23 (GPL-3.0)
+Change: only utils.sh get_susfs_guard_lkm() sed pattern fixed.
+Original pattern only matched standard GKI uname like 5.10.xxx-android12-...
+It failed for custom localversion like 5.10.269-KagamiChihiro-MillenniumTeam-android12-9+,
+so ReSuSFS said "custom kernel, no matching LKM".
+Patched pattern allows any text between patch version and android tag,
+so KMI android12-5.10 is detected and susfs_guard_lkm-android12-5.10.ko is downloaded/loaded.
+All other files are untouched upstream v26.10.23. Next official ReSuSFS update will
+overwrite this patch; re-apply if the official detection still fails for your kernel.
